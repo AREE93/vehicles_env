@@ -10,7 +10,7 @@ disper_check = st.checkbox('Generar gráfico de dispersión')
 if histo_check:
     st.write('Creación de un histográma para el conjunto de datos de anuncios de venta de coches')
     fig = go.Figure(data=[go.Histogram(x=car_data['odometer'])])
-    fig.update_layout(title_text='Distribución del Odómetro', y="Odómetro en millas")
+    fig.update_layout(title_text='Distribución del Odómetro')
     st.plotly_chart(fig, use_container_width=True)
 if disper_check:
     st.write('Creación de diagráma de dispersión para el conjunto de datos de anuncios de venta de coches')
